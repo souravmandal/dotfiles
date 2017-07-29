@@ -8,4 +8,6 @@ source ~/.bashrc
 export PATH=".:$HOME/Exec:/sbin:/usr/sbin:$PATH" 
 
 # Misc. env vars
-EDITOR=/usr/bin/vim
+export EDITOR=/usr/bin/vim
+export CLICOLOR=1
+export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
