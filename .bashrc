@@ -7,16 +7,23 @@ alias 	cl=clear
 alias	df="df -m"
 alias	free="free -m"
 alias   gr=grep
-alias	la="ls --color=auto -lAFh"
-alias 	ll="ls --color=auto -lFh"
-alias   ls="ls --color=auto"
 alias 	pa="ps auwx"
+if [ "$(uname)" == "Linux" ]; then
+    alias   ls="ls --color=auto"
+    alias 	ll="ls --color=auto -lFh"
+    alias	la="ls --color=auto -lAFh"
+else
+    alias 	ll="ls -lFh"
+    alias	la="ls -lAFh"
+fi
+
+# Gentoo aliases
 alias	cave-resolve="cave --log-level silent resolve --slots installed-or-best --no-follow-installed-build-dependencies --no-follow-installed-dependencies --continue-on-failure if-satisfied --show-option-descriptions none --show-descriptions none --permit-downgrade '*/*'"
 alias	cave-show='cave --log-level silent show -1s -k IUSE'
 alias	cave-uninstall="cave --log-level silent uninstall --purge '*/*'"
 alias 	cfg-update="cfg-update --paludis"
 
-# Terminal window
+# Terminal window fanciness
 case "$TERM" in
 	*term*|*rxvt*)
 		case "$DISPLAY" in

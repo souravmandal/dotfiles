@@ -1,6 +1,6 @@
 #!/bin/sh
 
-dotfiles=$(ls $HOME/dotfiles -a | grep -v git | grep '^\.[^\.$]')
+dotfiles=$(ls -a $HOME/dotfiles | grep -v git | grep '^\.[^\.$]')
 
 for df in $dotfiles; do
     echo "Deploying $df"
