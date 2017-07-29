@@ -1,0 +1,41 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+set autoindent
+set background=dark
+set backspace=2
+set encoding=utf-8
+set expandtab
+set history=50
+set hlsearch
+set nowrap
+set number
+set ruler
+set shiftwidth=4
+set showmatch
+set showmode
+set tabstop=4
+set termencoding=utf-8
+set textwidth=79
+colors desert
+
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+set laststatus=2
+
+"let g:indentLine_setColors=0
+
+let g:syntastic_aggregate_errors=1
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=0
+let g:syntastic_check_on_open=1
+let g:syntastic_c_compiler="clang"
+let g:syntastic_c_compiler_options="-std=c99 -Wall -Wextra"
+let g:syntastic_cpp_compiler="clang++"
+let g:syntastic_cpp_compiler_options="-std=c++11 -Wall -Wextra"
+
+let g:ycm_confirm_extra_conf=0
+let g:ycm_global_ycm_extra_conf="~/.vim/ycm_extra_conf.py"
+"let g:ycm_show_diagnostics_ui=0
