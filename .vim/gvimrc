@@ -1,2 +1,8 @@
-set guifont=Monospace\ Regular\ 8
 set guioptions -=T
+
+if has ("gui_macvim")
+    set guifont=Menlo:h14
+else    
+    set guifont=Monospace\ Regular\ 8
+endif
+
