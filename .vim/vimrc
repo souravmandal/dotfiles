@@ -3,6 +3,9 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+set list!
+set listchars=tab:>>,trail:.
+
 set autoindent
 set background=dark
 set backspace=2
@@ -40,3 +43,14 @@ let g:syntastic_cpp_compiler_options="-std=c++11 -Wall -Wextra"
 let g:ycm_confirm_extra_conf=0
 let g:ycm_global_ycm_extra_conf="~/.vim/ycm_extra_conf.py"
 "let g:ycm_show_diagnostics_ui=0
+
+if has ("gui_running")
+    set guioptions -=T
+endif
+
+if has ("gui_macvim")
+    set guifont=Menlo:h14
+else    
+    set guifont=Monospace\ Regular\ 8
+endif
+
