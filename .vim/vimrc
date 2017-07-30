@@ -1,7 +1,8 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
-syntax on
 filetype plugin indent on
+colors desert
+syntax on
 
 set list!
 set listchars=tab:>>,trail:.
@@ -22,7 +23,6 @@ set showmode
 set tabstop=4
 set termencoding=utf-8
 set textwidth=79
-colors desert
 
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
