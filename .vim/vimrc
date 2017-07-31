@@ -9,14 +9,16 @@ execute pathogen#infect()
 "
 set background=dark
 colors desert
-"set termguicolors "NOT PORTABLE
 syntax on
 set list!
 set listchars=tab:>>,trail:.
+"Set vim to assume TrueColor in terminal -- NOT PORTABLE 
+"set termguicolors
 
-" Turn off toolbar in gvim
+" Turn off toolbar and menu in gvim
 if has ("gui_running")
     set guioptions -=T
+    set guioptions -=m
 endif
 
 " Set fonts in {g,mac}vim
