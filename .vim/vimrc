@@ -9,6 +9,7 @@ execute pathogen#infect()
 "
 set background=dark
 colors desert
+set termguicolors
 syntax on
 set list!
 set listchars=tab:>>,trail:.
