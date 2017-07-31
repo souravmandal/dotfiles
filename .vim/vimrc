@@ -9,7 +9,7 @@ execute pathogen#infect()
 "
 set background=dark
 colors desert
-set termguicolors
+"set termguicolors "NOT PORTABLE
 syntax on
 set list!
 set listchars=tab:>>,trail:.
@@ -19,7 +19,7 @@ if has ("gui_running")
     set guioptions -=T
 endif
 
-" Set fonts in gvim
+" Set fonts in {g,mac}vim
 if has ("gui_macvim")
     set guifont=Menlo:h14
 else    
