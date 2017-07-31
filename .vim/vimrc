@@ -15,7 +15,7 @@ set listchars=tab:>>,trail:.
 "Set vim to assume TrueColor in terminal -- NOT PORTABLE 
 "set termguicolors
 
-" Turn off toolbar and menu in gvim
+" Turn off toolbar and menu in {g,mac}vim
 if has ("gui_running")
     set guioptions -=T
     set guioptions -=m
