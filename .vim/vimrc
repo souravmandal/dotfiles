@@ -56,6 +56,12 @@ set textwidth=0 wrapmargin=0
 set laststatus=2
 
 "
+" AUTOCLOSE
+"
+"https://github.com/Valloric/YouCompleteMe/issues/896
+let g:AutoClosePumvisible = {"ENTER": "<C-Y>", "ESC": "<ESC>"}
+
+"
 " SYNTASTIC
 "
 "set statusline+=%#warningmsg#
