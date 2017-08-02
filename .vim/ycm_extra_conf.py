@@ -4,13 +4,12 @@ import ycm_core
 flags = [
   '-Wall',
   '-Wextra',
-  '-DNDEBUG',
   '-std=c++11',
-  '-xc++',
-  '-isystem/usr/include/',
+  '-x',
+  'c++',
   ]
 
-SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', ]
+SOURCE_EXTENSIONS = [ '.C', '.cpp', '.cxx', '.cc', ]
 
 def FlagsForFile( filename, **kwargs ):
   return {
