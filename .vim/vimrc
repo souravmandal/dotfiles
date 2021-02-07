@@ -49,6 +49,9 @@ set textwidth=79
 " Wrapping
 set wrap
 set textwidth=0 wrapmargin=0
+" Spelling (off by default)
+set spell spelllang=en_us
+set nospell
 
 "
 " AIRLINE
