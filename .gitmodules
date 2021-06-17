@@ -26,10 +26,6 @@
 	path = .vim/bundle/vim-operator-highlight
 	url = https://github.com/Valloric/vim-operator-highlight.git
 	branch = master
-[submodule ".vim/bundle/YouCompleteMe"]
-	path = .vim/bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
-	branch = master
 [submodule ".vim/bundle/vim-gitgutter"]
 	path = .vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
@@ -40,3 +36,6 @@
 [submodule ".vim/bundle/YCM-Generator"]
 	path = .vim/bundle/YCM-Generator
 	url = https://github.com/rdnetto/YCM-Generator.git
+[submodule ".vim/bundle/YouCompleteMe"]
+	path = .vim/bundle/YouCompleteMe
+	url = https://github.com/ycm-core/YouCompleteMe
